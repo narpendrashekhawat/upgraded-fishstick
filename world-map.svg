@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="mapFade" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#60A5FA" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#93C5FD" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g fill="#3B82F6" opacity="0.35">
+    <!-- North America -->
+    <!-- Canada & Alaska -->
+    <circle cx="180" cy="100" r="3"/><circle cx="200" cy="90" r="3"/><circle cx="220" cy="85" r="3"/><circle cx="240" cy="80" r="3"/><circle cx="260" cy="85" r="3"/><circle cx="280" cy="95" r="3"/>
+    <circle cx="160" cy="110" r="3"/><circle cx="180" cy="120" r="3"/><circle cx="200" cy="110" r="3"/><circle cx="220" cy="105" r="3"/><circle cx="240" cy="100" r="3"/><circle cx="260" cy="105" r="3"/><circle cx="280" cy="115" r="3"/>
+    <!-- USA -->
+    <circle cx="190" cy="135" r="3.5"/><circle cx="210" cy="130" r="3.5"/><circle cx="230" cy="125" r="3.5"/><circle cx="250" cy="125" r="3.5"/><circle cx="270" cy="130" r="3.5"/><circle cx="290" cy="140" r="3.5"/>
+    <circle cx="180" cy="150" r="3.5"/><circle cx="200" cy="148" r="3.5"/><circle cx="220" cy="145" r="3.5"/><circle cx="240" cy="142" r="3.5"/><circle cx="260" cy="148" r="3.5"/><circle cx="280" cy="155" r="3.5"/><circle cx="300" cy="160" r="3.5"/>
+    <circle cx="210" cy="165" r="3.5"/><circle cx="230" cy="162" r="3.5"/><circle cx="250" cy="160" r="3.5"/><circle cx="270" cy="165" r="3.5"/><circle cx="290" cy="172" r="3.5"/>
+    <!-- Mexico & Central America -->
+    <circle cx="215" cy="182" r="3"/><circle cx="230" cy="180" r="3"/><circle cx="245" cy="185" r="3"/><circle cx="260" cy="195" r="3"/>
+    <circle cx="240" cy="205" r="2.5"/><circle cx="255" cy="215" r="2.5"/><circle cx="265" cy="228" r="2.5"/>
+
+    <!-- South America -->
+    <circle cx="310" cy="245" r="3.5"/><circle cx="330" cy="240" r="3.5"/><circle cx="350" cy="245" r="3.5"/>
+    <circle cx="295" cy="260" r="3.5"/><circle cx="315" cy="258" r="3.5"/><circle cx="335" cy="255" r="3.5"/><circle cx="355" cy="260" r="3.5"/><circle cx="370" cy="265" r="3.5"/>
+    <circle cx="300" cy="278" r="3.5"/><circle cx="320" cy="275" r="3.5"/><circle cx="340" cy="272" r="3.5"/><circle cx="360" cy="278" r="3.5"/><circle cx="380" cy="285" r="3.5"/>
+    <circle cx="310" cy="295" r="3.5"/><circle cx="330" cy="292" r="3.5"/><circle cx="350" cy="290" r="3.5"/><circle cx="370" cy="298" r="3.5"/>
+    <circle cx="315" cy="312" r="3"/><circle cx="335" cy="310" r="3"/><circle cx="355" cy="312" r="3"/><circle cx="365" cy="320" r="3"/>
+    <circle cx="325" cy="330" r="3"/><circle cx="345" cy="328" r="3"/><circle cx="360" cy="335" r="3"/>
+    <circle cx="330" cy="348" r="2.5"/><circle cx="345" cy="346" r="2.5"/>
+    <circle cx="335" cy="365" r="2.5"/><circle cx="342" cy="380" r="2.5"/>
+
+    <!-- Europe -->
+    <circle cx="480" cy="95" r="3"/><circle cx="500" cy="90" r="3"/><circle cx="520" cy="95" r="3"/><circle cx="540" cy="100" r="3"/>
+    <circle cx="465" cy="110" r="3.5"/><circle cx="485" cy="108" r="3.5"/><circle cx="505" cy="105" r="3.5"/><circle cx="525" cy="110" r="3.5"/><circle cx="545" cy="115" r="3.5"/>
+    <circle cx="475" cy="125" r="3.5"/><circle cx="495" cy="122" r="3.5"/><circle cx="515" cy="120" r="3.5"/><circle cx="535" cy="124" r="3.5"/><circle cx="555" cy="128" r="3.5"/>
+    <circle cx="460" cy="140" r="3.5"/><circle cx="480" cy="138" r="3.5"/><circle cx="500" cy="135" r="3.5"/><circle cx="520" cy="137" r="3.5"/><circle cx="540" cy="142" r="3.5"/>
+
+    <!-- Africa -->
+    <circle cx="460" cy="170" r="3.5"/><circle cx="480" cy="165" r="3.5"/><circle cx="500" cy="162" r="3.5"/><circle cx="520" cy="165" r="3.5"/><circle cx="540" cy="170" r="3.5"/>
+    <circle cx="445" cy="185" r="3.5"/><circle cx="465" cy="182" r="3.5"/><circle cx="485" cy="180" r="3.5"/><circle cx="505" cy="182" r="3.5"/><circle cx="525" cy="188" r="3.5"/><circle cx="545" cy="195" r="3.5"/><circle cx="560" cy="205" r="3.5"/>
+    <circle cx="440" cy="202" r="3.5"/><circle cx="460" cy="198" r="3.5"/><circle cx="480" cy="196" r="3.5"/><circle cx="500" cy="198" r="3.5"/><circle cx="520" cy="204" r="3.5"/><circle cx="540" cy="212" r="3.5"/><circle cx="555" cy="220" r="3.5"/>
+    <circle cx="465" cy="218" r="3.5"/><circle cx="485" cy="215" r="3.5"/><circle cx="505" cy="216" r="3.5"/><circle cx="525" cy="222" r="3.5"/><circle cx="545" cy="232" r="3.5"/>
+    <circle cx="480" cy="235" r="3.5"/><circle cx="500" cy="232" r="3.5"/><circle cx="520" cy="238" r="3.5"/><circle cx="535" cy="248" r="3.5"/>
+    <circle cx="490" cy="252" r="3.5"/><circle cx="510" cy="250" r="3.5"/><circle cx="530" cy="258" r="3.5"/>
+    <circle cx="495" cy="270" r="3"/><circle cx="515" cy="268" r="3"/><circle cx="530" cy="275" r="3"/>
+    <circle cx="500" cy="288" r="3"/><circle cx="518" cy="286" r="3"/>
+    <circle cx="505" cy="305" r="2.5"/><circle cx="515" cy="318" r="2.5"/>
+
+    <!-- Asia & Middle East -->
+    <circle cx="565" cy="115" r="3.5"/><circle cx="585" cy="110" r="3.5"/><circle cx="605" cy="105" r="3.5"/><circle cx="625" cy="100" r="3.5"/><circle cx="645" cy="98" r="3.5"/><circle cx="665" cy="102" r="3.5"/><circle cx="685" cy="110" r="3.5"/>
+    <circle cx="575" cy="132" r="3.5"/><circle cx="595" cy="128" r="3.5"/><circle cx="615" cy="122" r="3.5"/><circle cx="635" cy="118" r="3.5"/><circle cx="655" cy="116" r="3.5"/><circle cx="675" cy="120" r="3.5"/><circle cx="695" cy="128" r="3.5"/>
+    <circle cx="580" cy="148" r="3.5"/><circle cx="600" cy="145" r="3.5"/><circle cx="620" cy="140" r="3.5"/><circle cx="640" cy="136" r="3.5"/><circle cx="660" cy="134" r="3.5"/><circle cx="680" cy="138" r="3.5"/><circle cx="700" cy="146" r="3.5"/>
+    <circle cx="570" cy="165" r="3.5"/><circle cx="590" cy="162" r="3.5"/><circle cx="610" cy="158" r="3.5"/><circle cx="630" cy="154" r="3.5"/><circle cx="650" cy="152" r="3.5"/><circle cx="670" cy="156" r="3.5"/><circle cx="690" cy="164" r="3.5"/>
+    <!-- India & South Asia -->
+    <circle cx="615" cy="178" r="3.5"/><circle cx="635" cy="175" r="3.5"/><circle cx="655" cy="172" r="3.5"/><circle cx="675" cy="175" r="3.5"/>
+    <circle cx="625" cy="194" r="3.5"/><circle cx="645" cy="190" r="3.5"/><circle cx="665" cy="188" r="3.5"/><circle cx="685" cy="192" r="3.5"/>
+    <circle cx="635" cy="210" r="3"/><circle cx="650" cy="208" r="3"/><circle cx="660" cy="222" r="2.5"/>
+    <!-- SE Asia & East Asia -->
+    <circle cx="705" cy="178" r="3.5"/><circle cx="725" cy="175" r="3.5"/><circle cx="745" cy="180" r="3.5"/>
+    <circle cx="698" cy="198" r="3"/><circle cx="715" cy="195" r="3"/><circle cx="730" cy="205" r="3"/>
+    <circle cx="710" cy="215" r="2.5"/><circle cx="725" cy="225" r="2.5"/><circle cx="740" cy="235" r="2.5"/>
+
+    <!-- Australia -->
+    <circle cx="750" cy="295" r="3.5"/><circle cx="770" cy="290" r="3.5"/><circle cx="790" cy="295" r="3.5"/>
+    <circle cx="735" cy="312" r="3.5"/><circle cx="755" cy="308" r="3.5"/><circle cx="775" cy="305" r="3.5"/><circle cx="795" cy="310" r="3.5"/><circle cx="810" cy="318" r="3.5"/>
+    <circle cx="740" cy="328" r="3.5"/><circle cx="760" cy="325" r="3.5"/><circle cx="780" cy="322" r="3.5"/><circle cx="800" cy="326" r="3.5"/><circle cx="815" cy="332" r="3.5"/>
+    <circle cx="750" cy="344" r="3"/><circle cx="770" cy="340" r="3"/><circle cx="790" cy="338" r="3"/><circle cx="805" cy="345" r="3"/>
+  </g>
+</svg>
