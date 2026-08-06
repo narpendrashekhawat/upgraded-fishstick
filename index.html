@@ -60,7 +60,7 @@
           <ul class="checks">
             <li><span class="ic green"><img src="logincheck.svg" alt="Check"></span> Comparable distance within guidelines</li>
             <li><span class="ic green"><img src="logincheck.svg" alt="Check"></span> GLA reconciles to public record</li>
-            <li><span class="ic orange">!</span> Comp 3 adjustment exceeds 25%</li>
+            <li><span class="ic orange"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert-icon lucide-triangle-alert"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span> Comp 3 adjustment exceeds 25%</li>
             <li><span class="ic green"><img src="logincheck.svg" alt="Check"></span> Photos complete · subject + comps</li>
           </ul>
         </div>
@@ -153,11 +153,16 @@
 
         <!-- Tabs -->
         <div class="tabs">
-          <button class="tab on">Sign In</button>
-          <button class="tab">Create account</button>
-        </div>
+    <button id="signInTab" class="tab on" type="button">
+        Sign In
+    </button>
 
+    <button id="createAccountTab" class="tab" type="button">
+        Create Account
+    </button>
+</div>
         <!-- Form -->
+         <div id="signinPage">
         <form>
           <div class="field">
             <label>Work Email</label>
@@ -173,13 +178,12 @@
           <div class="field">
             <label>Password</label>
             <div class="inp-wrap">
-              <svg class="inp-ic" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2">
-                <rect x="3" y="11" width="18" height="11" rx="2" />
-                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-              </svg>
+              <img src="loginlock.svg" class="inp-ic" alt="Lock Icon">
               <input type="password" placeholder="Enter Password">
             </div>
           </div>
+
+
 
           <!-- Keep / Forgot row -->
           <div class="opt-row">
@@ -197,12 +201,88 @@
             </svg>
           </button>
         </form>
+        </div>
 
+        <div id="signupPage" class="hidden">
+          <!--Header-->
+          <div class="signup-header">
+            <h3>Company <span class="blue">Info</span></h3>
+            <p>Tell us about your organization</p>
+            </div>
+
+          <!-- Progress Stepper -->
+           <div class="stepper">
+            <div class="step-line"></div>
+           
+            <!-- Step 1(Active) -->
+             <div class="step active">
+              <div class="step-icon"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon lucide-building-2"><path d="M10 12h4"/><path d="M10 8h4"/><path d="M14 21v-3a2 2 0 0 0-4 0v3"/><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/></svg>
+             </div>
+             <span> Contact Person</span>
+             </div>
+
+             <!--Step 3-->
+             <div class="step">
+              <div class="step-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+             </div>
+             <span> Review</span>
+            </div>
+
+            <!-- Form Fields-->
+             <form>
+              <div class="form-grid">
+                <!--Company Name-->
+
+              <div class="field">
+                <label>Company Name <span class="req">*</span></label>
+                <div class="inp-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check-icon lucide-clipboard-check"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+                  <input type="text" placeholder="Acme Landing Corp">
+                  </div>
+
+              </div>
+
+              <!--Account Type-->
+              <div class="field">
+                <label>Account Type <span class="req">*</span></label>
+                <div class="inp-wrap select-wrap">
+                  <select>
+                    <option value="disabled selected">Select type</option>
+                    <option value="lender">Lender</option>
+                  <option value="appraiser">Appraiser</option>
+                  </select>
+                </div>
+              </div>
+              <!--Phone-->
+            <div class="field">
+              <label>Phone</label>
+              <div class="inp-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                <input type="tel" placeholder="TX">
+                </div>
+              </div>
+            
+
+            </div>
+
+            <!--Est. Monthly Orders-->
+            <div class="field">
+              <label>Est. Monthly Appraisal Orders <span class="req">*</span></label>
+            </div>
+        
+
+        
+      
+
+      
         <!-- Footer -->
         <p class="terms">By Continuing you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
         </p>
         <p class="create">Don't have an account? <a href="#">Create Now</a></p>
       </div>
+    </div>
     </section>
 
   </div><!-- /layout -->
@@ -212,7 +292,6 @@
     <span>© 2026. GoSource All rights reserved.</span>
   </footer>
 <div class="wave"></div>
+<script src="script.js"></script>
 </body>
-
-
 </html>
