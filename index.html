@@ -203,78 +203,121 @@
         </form>
         </div>
 
-        <div id="signupPage" class="hidden">
-          <!--Header-->
+            
+
+     <div id="signupPage" class="hidden">
+          <!-- Header -->
           <div class="signup-header">
-            <h3>Company <span class="blue">Info</span></h3>
+            <h2>Company <span class="blue">Info</span></h2>
             <p>Tell us about your organization</p>
-            </div>
+          </div>
 
           <!-- Progress Stepper -->
-           <div class="stepper">
+          <div class="stepper">
             <div class="step-line"></div>
            
-            <!-- Step 1(Active) -->
-             <div class="step active">
-              <div class="step-icon"></div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon lucide-building-2"><path d="M10 12h4"/><path d="M10 8h4"/><path d="M14 21v-3a2 2 0 0 0-4 0v3"/><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/></svg>
-             </div>
-             <span> Contact Person</span>
-             </div>
-
-             <!--Step 3-->
-             <div class="step">
+            <!-- Step 1 (Active) -->
+            <div class="step active">
               <div class="step-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
-             </div>
-             <span> Review</span>
+                <!-- Changed to Briefcase to match reference image -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <span>Company Details</span>
             </div>
 
-            <!-- Form Fields-->
-             <form>
-              <div class="form-grid">
-                <!--Company Name-->
+            <!-- Step 2 -->
+            <div class="step">
+              <div class="step-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+              </div>
+              <span>Contact Person</span>
+            </div>
 
+            <!-- Step 3 -->
+            <div class="step">
+              <div class="step-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+              </div>
+              <span>Review</span>
+            </div>
+          </div> <!-- Closed Stepper correctly -->
+
+          <!-- Form Fields -->
+          <form>
+            <div class="form-grid">
+              
+              <!-- Company Name -->
               <div class="field">
                 <label>Company Name <span class="req">*</span></label>
                 <div class="inp-wrap">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check-icon lucide-clipboard-check"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
-                  <input type="text" placeholder="Acme Landing Corp">
-                  </div>
-
+                  <svg class="inp-ic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+                  <input type="text" placeholder="Acme Lending Corp">
+                </div>
               </div>
 
-              <!--Account Type-->
+              <!-- Account Type -->
               <div class="field">
                 <label>Account Type <span class="req">*</span></label>
                 <div class="inp-wrap select-wrap">
                   <select>
-                    <option value="disabled selected">Select type</option>
+                    <option value="" disabled selected>Select type</option>
                     <option value="lender">Lender</option>
-                  <option value="appraiser">Appraiser</option>
+                    <option value="appraiser">Appraiser</option>
                   </select>
                 </div>
               </div>
-              <!--Phone-->
-            <div class="field">
-              <label>Phone</label>
-              <div class="inp-wrap">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
-                <input type="tel" placeholder="TX">
+
+              <!-- Phone -->
+              <div class="field">
+                <label>Phone</label>
+                <div class="inp-wrap">
+                  <svg class="inp-ic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                  <input type="tel" placeholder="+1 (555) 000-0000">
                 </div>
               </div>
-            
 
+               <!-- State -->
+               <div class="field">
+                <label>State</label>
+                <div class="inp-wrap">
+                  <svg class="inp-ic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  <input type="text" placeholder="TX">
+                </div>
+               </div>
             </div>
 
-            <!--Est. Monthly Orders-->
+            <!-- Est. Monthly Orders -->
             <div class="field">
               <label>Est. Monthly Appraisal Orders <span class="req">*</span></label>
+              <div class="inp-wrap select-wrap">
+                <select>
+                  <option value="" disabled selected>Select range</option>
+                  <option value="0-50">0-50</option>
+                  <option value="51-200">51-200</option>
+                  <option value="201+">201+</option>
+                </select>
+              </div>
             </div>
-        
 
-        
-      
+            <!-- Checkbox Terms -->
+            <div style="margin-bottom:16px;">
+              <label class="chk" style="align-items: flex-start; font-size: 11.5px; color: var(--muted);">
+                <input type="checkbox">
+                <span class="box" style="margin-top: 1px;"></span>
+                <span>By continuing you agree to our <a href="#" style="color: var(--blue); text-decoration: underline;">Terms of Use</a> and <a href="#" style="color: var(--blue); text-decoration: underline;">Privacy Policy</a>.</span>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">
+              Continue
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="16" height="16">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </form>
+        </div>      
 
       
         <!-- Footer -->

@@ -307,25 +307,37 @@ h1 {
   font-size: 10.5px;
   color: var(--muted);
 }
-
 .right {
-  width: 370px;
-  flex: 0 0 370px;
+  width: 420px;
+  flex: 0 0 420px;
 }
 
 .card {
   background: #fff;
   border-radius: 20px;
-  padding: 26px 26px;
+  padding: 22px 26px;
   box-shadow: var(--shadow);
   width: 100%;
+   max-height: calc(100vh - 32px);
+   overflow-y: auto;
+   overscroll-behavior: contain;
 }
+
 
 .card-top {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+}
+
+.card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card::-webkit-scrollbar-thumb {
+ background: #D1D5DB;
+  border-radius: 10px;
 }
 
 .avatar {
@@ -631,4 +643,161 @@ img.inp-ic {
 
 .hidden {
   display: none;
+}
+
+.signup-header {
+  text-align: center;
+  margin-bottom: 14px;
+
+}
+
+.signup-header h3 {
+  text-align: center;
+  margin-bottom: 22px;
+}
+.signup-header p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+  
+/* ============================================================
+   STEPPER LAYOUT
+   ============================================================ */
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin: 20px 0 26px;
+}
+
+.step-line {
+    position: absolute;
+    top: 21px; /* Centers the line behind the icons */
+    left: 50px;
+    right: 50px;
+    height: 2px;
+    background: #E5E7EB;
+    z-index: 0;
+}
+
+.step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    z-index: 2;
+}
+
+.step-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #9CA3AF; /* Gray icon color for inactive steps */
+    transition: all 0.2s ease;
+}
+
+.step.active .step-icon {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+    /* Soft purple/blue glow matching the reference */
+    box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4); 
+}
+
+.step span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6B7280;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.step.active span {
+    color: var(--blue);
+}
+
+/* ============================================================
+   FORM GRID & INPUT ICONS
+   ============================================================ */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.req {
+    color: #EF4444;
+}
+
+/* Force icons inside the input fields */
+.inp-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.inp-wrap .inp-ic {
+    position: absolute;
+    left: 14px;
+    width: 16px;
+    height: 16px;
+    color: #6B7280;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.inp-wrap input {
+    width: 100%;
+    /* 40px left padding prevents text from overlapping the absolute positioned icon */
+    padding: 9px 14px 9px 40px; 
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 13.4px;
+    color: var(--ink);
+    outline: none;
+    background: #FAFBFF;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+/* Select Dropdown Styling */
+.select-wrap select {
+    width: 100%;
+    padding: 9px 36px 9px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 13.4px;
+    color: #374151;
+    outline: none;
+    background: #FAFBFF;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    /* Custom arrow for dropdowns */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%20%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+.select-wrap select:focus,
+.inp-wrap input:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+@media screen and (max-width: 480px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
 }
